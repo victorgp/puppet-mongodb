@@ -76,3 +76,6 @@ only = <%= scope.function_options_lookup(['only','']) %>
 
 # slaveDelay = <%= scope.function_options_lookup(['slaveDelay','0']) %>
 autoresync = <%= scope.function_options_lookup(['autoresync','false']) %>
+
+# In replica set configuration, specify the name of the replica set
+replSet = <%= scope.function_options_lookup(['replicaset','']) %>
