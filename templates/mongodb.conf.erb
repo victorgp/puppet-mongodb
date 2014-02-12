@@ -71,7 +71,9 @@ master = <%= scope.function_options_lookup(['master','false']) %>
 <% if  scope.function_options_lookup(['slave','false']) == true %>
 slave = <%= scope.function_options_lookup(['slave','false']) %>
 source = <%= scope.function_options_lookup(['source','']) %>
+ <% if scope.function_options_lookup(['replicaset','']) == '' %>
 only = <%= scope.function_options_lookup(['only','']) %>
+ <% end %>
 <% end %>
 
 # slaveDelay = <%= scope.function_options_lookup(['slaveDelay','0']) %>
